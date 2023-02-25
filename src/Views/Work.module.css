@@ -1,0 +1,42 @@
+.myworkContainer {
+    --about-min-height: 600px;
+    position: relative;
+    width: 100%;
+    min-height: var(--about-min-height);
+    background-image: linear-gradient(
+      to bottom,
+      #1a7991,
+      #3c858e,
+      #5a908d,
+      #769a90,
+      #8fa497
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .myworkContent {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutHeader {
+    color: #46524d;
+    font-size: 2rem;
+  }
+  .divWidth{
+    height: 100px;
+    width: 50px;
+    background-color: #768fc5;
+    margin: 0 auto; /* So as to center the box */
+    transition-property: width, height;
+    /* transition-property: height; */
+    transition-duration: 2s;
+    
+  }
+  .divWidth:hover{
+    width: 500px;
+    height: 150px;
+  }
