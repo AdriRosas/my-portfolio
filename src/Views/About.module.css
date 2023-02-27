@@ -1,7 +1,7 @@
 @import url("../Normalize.css");
 .aboutContainer {
   --about-min-height: 580px;
-  position: relative;
+  /* position: relative; */
   width: 100%;
   min-height: var(--about-min-height);
   background-image: linear-gradient(
@@ -35,7 +35,7 @@
   text-align: right;
 }
 .aboutTextContainer {
-  width: 400px;
+  width: 55%;
   text-align: right;
   display: flex;
   flex-direction: column;
@@ -43,23 +43,24 @@
   justify-content: center;
 }
 .aboutMeDescription {
-  width: 400px;
+  /* width: 400px; */
   font-family: "Baloo 2", cursive;
   color: #050917;
-  width: 400px;
+  /* width: 400px; */
   line-height: 18px;
 }
 .btnCv {
   width: 80%;
 }
 .imgMe {
-  height: 100%;
+  width: 55%;
+  margin-left: 5%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .imgMe img {
-  width: 65%; 
+  max-width: 90%;
+  height: auto;
 }
 @media (max-width: 1265px) {
   .aboutContainer {
@@ -70,9 +71,6 @@
     );
   }
   .aboutContent {
-    width: 60%;
-  }
-  .imgMe img {
     width: 60%;
   }
 }
@@ -100,33 +98,30 @@
     flex-direction: column;
   }
   .aboutContent {
-    width: 90% !important;
+    width: 70% !important;
     flex-direction: column-reverse;
   }
   .aboutHeader {
     text-align: center;
     font-size: 2rem !important;
   }
+  .aboutTextContainer {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
   .aboutMeDescription {
     text-align: center;
     font-size: 0.8rem;
   }
   .imgMe {
-    width: 300px;
-    margin: 100px 0 20px 0;
-  }
-  .imgMe img {
-    width: 60%;
-  }
-  .aboutTextContainer {
-    align-items: center;
+    width: 40%;
+    margin-left: 0%;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 420px) {
   .aboutMeDescription {
-    width: 280px;
-  }
-  .imgMe img {
-    width: 45%;
+    width: 80%;
   }
 }
