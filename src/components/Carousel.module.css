@@ -232,7 +232,7 @@
   }
   .txtCard {
     height: 250px;
-    width: 300px;
+    width: 100%;
   }
   .bar {
     top: clamp(
@@ -262,6 +262,37 @@
   .txtCrd {
     text-align: left;
   }
+  .bar {
+    position: absolute;
+    top: 50px;
+    height: 2px;
+    width: 150px;
+    background-color: transparent;
+  }
+  .txtUno {
+    width: 90%;
+  }
+  .txtDos {
+    width: 90%;
+  }
+  .txtCard {
+    width: 100%;
+    height: 60%;
+    font-family: "Baloo 2", cursive;
+    transition: 0.4s ease-out;
+  }
+  .contentSwiper {
+    width: 85vw;
+    height: clamp(
+      300px,
+      calc(300px + (550 - 500) * ((100vw - 360px) / (767 - 360))),
+      550px
+    );
+  }
+  .card {
+    display: flex;
+    height: 500px;
+  }
   .eternaImg img {
     width: 120px;
   }
@@ -269,19 +300,19 @@
     padding-left: 10px;
   }
   .tl {
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 350px;
   }
   .al {
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 350px;
   }
   .rc {
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 350px;
   }
   .bl {
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 350px;
   }
 }
