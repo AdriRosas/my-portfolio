@@ -115,6 +115,9 @@
   .imgMe img {
     width: 100%;
   }
+  .aboutTextContainer {
+    align-items: center;
+  }
 }
 @media (max-width: 420px) {
   .aboutMeDescription {
