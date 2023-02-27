@@ -115,8 +115,8 @@
     margin: 100px 0 20px 0;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 4200px) {
   .aboutMeDescription {
-    width: 80%;
+    width: 280px;
   }
 }

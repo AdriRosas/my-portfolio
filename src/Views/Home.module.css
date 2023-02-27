@@ -116,18 +116,37 @@
 
   .coverTitle {
     font-size: clamp(
-      65px,
-      calc(65px + (112 - 65) * ((100vw - 360px) / (767 - 360))),
+      47px,
+      calc(47px + (112 - 65) * ((100vw - 360px) / (767 - 360))),
       112px
     );
     line-height: clamp(
-      50px,
-      calc(50px + (83 - 50) * ((100vw - 360px) / (767 - 360))),
+      40px,
+      calc(40px + (83 - 50) * ((100vw - 360px) / (767 - 360))),
       83px
     );
+    padding-left: clamp(
+      50px,
+      calc(50px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    ); 
+  }
+  .coverSubtitle {
+    padding-left: clamp(
+      50px,
+      calc(50px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    ); 
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 420px) {
+  .coverTitle {
+    font-family: Advent Pro, sans-serif;
+    color: #46524d;
+    font-size: 5rem;
+    line-height: 5.2rem;
+    font-weight: lighter;
+  }
   .coverBackgroundImage {
     object-position: 45% bottom;
   }
@@ -142,14 +161,26 @@
 
   .coverTitle {
     font-size: clamp(
-      65px,
-      calc(65px + (112 - 65) * ((100vw - 360px) / (767 - 360))),
+      45px,
+      calc(45px + (112 - 65) * ((100vw - 360px) / (767 - 360))),
       112px
     );
     line-height: clamp(
-      50px,
-      calc(50px + (83 - 50) * ((100vw - 360px) / (767 - 360))),
+      35px,
+      calc(35px + (83 - 50) * ((100vw - 360px) / (767 - 360))),
       83px
     );
+    padding-left: clamp(
+      10px,
+      calc(10px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    ); 
+  }
+  .coverSubtitle {
+    padding-left: clamp(
+      10px,
+      calc(10px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    ); 
   }
 }

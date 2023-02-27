@@ -98,7 +98,9 @@
   }
 }
 @media (max-width: 350px) {
+
   .robotImg {
+    height: 150px;
     background-position: left 60%;
   }
   .workHeader {
