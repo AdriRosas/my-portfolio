@@ -113,7 +113,7 @@
     margin: 100px 0 20px 0;
   }
   .imgMe img {
-    width: 100%;
+    width: 80%;
   }
   .aboutTextContainer {
     align-items: center;
@@ -122,5 +122,8 @@
 @media (max-width: 420px) {
   .aboutMeDescription {
     width: 280px;
+  }
+  .imgMe img {
+    width: 70%;
   }
 }
