@@ -54,9 +54,12 @@
 }
 .imgMe {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .imgMe img {
-  width: 300px; 
+  width: 65%; 
 }
 @media (max-width: 1265px) {
   .aboutContainer {
@@ -70,7 +73,7 @@
     width: 60%;
   }
   .imgMe img {
-    width: 250px;
+    width: 60%;
   }
 }
 @media (max-width: 767px) {
@@ -113,7 +116,7 @@
     margin: 100px 0 20px 0;
   }
   .imgMe img {
-    width: 80%;
+    width: 60%;
   }
   .aboutTextContainer {
     align-items: center;
@@ -124,6 +127,6 @@
     width: 280px;
   }
   .imgMe img {
-    width: 70%;
+    width: 45%;
   }
 }
