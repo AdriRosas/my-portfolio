@@ -20,6 +20,7 @@
   display: none !important;
 }
 .aboutContent {
+  border: 2px solid res;
   width: 65%;
   display: flex;
   align-items: center;
@@ -38,10 +39,11 @@
   text-align: right;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 .aboutMeDescription {
+  width: 400px;
   font-family: "Baloo 2", cursive;
   color: #050917;
   width: 400px;
@@ -107,15 +109,14 @@
     font-size: 0.8rem;
   }
   .imgMe {
-    max-width: clamp(
-      200px,
-      calc(200px + (300 - 150) * ((100vw - 768px) / (1024 - 768))),
-      200px
-    );
+    width: 300px;
     margin: 100px 0 20px 0;
   }
+  .imgMe img {
+    width: 100%;
+  }
 }
-@media (max-width: 4200px) {
+@media (max-width: 420px) {
   .aboutMeDescription {
     width: 280px;
   }
