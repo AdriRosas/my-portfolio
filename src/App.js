@@ -3,6 +3,8 @@ import "./App.css";
 import {Home} from "./Views/Home"
 import {About} from "./Views/About"
 import {Work} from "./Views/Work"
+import {Contact} from "./Views/Contact"
+import {Footer} from "./Views/Footer.jsx"
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Home />
         <About />
         <Work />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );

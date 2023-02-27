@@ -46,9 +46,17 @@ main {
    */
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   margin: 0.67em 0;
 }
+.allTitle {
+  font-family: Advent Pro, sans-serif;
+  color: #46524d;
+  font-size: 7rem;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
 
 /* Grouping content
      ========================================================================== */

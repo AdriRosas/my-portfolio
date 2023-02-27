@@ -1,0 +1,287 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  top: 60px;
+  display: flex;
+}
+.eternaCard {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.eternaImg img {
+  width: 100px;
+  margin-right: 10px;
+}
+.eternaLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  height: 350px;
+  width: 500px;
+  transition: 0.2s ease-out;
+  left: 0px;
+}
+.tl {
+  height: 350px;
+  width: 500px;
+  background-color: #1d2f50;
+  background-image: url("../images/backfull.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 70%;
+}
+.al {
+  height: 350px;
+  width: 500px;
+  background-color: #edf1f4;
+  background-image: url("../images/alegantto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.rc {
+  height: 350px;
+  width: 500px;
+  background-color: #2b6ffa;
+  background-image: url("../images/reclutachat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bl {
+  height: 350px;
+  width: 500px;
+  background-color: #edf1f4;
+  background-image: url("../images/borrego-lavin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s ease-out;
+  position: relative;
+  left: 0px;
+}
+.card:hover {
+  transition: 0.4s ease-out;
+}
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  z-index: 10;
+  transition: 0.2s ease-out;
+}
+.contentCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.4s ease-out;
+}
+
+.txtCard {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  display: none;
+  padding: 1rem;
+  width: 500px;
+  height: 60%;
+  font-family: "Baloo 2", cursive;
+  transition: 0.4s ease-out;
+}
+.card:hover .txtCard {
+  display: block;
+  transition: 0.3s ease-out;
+}
+.title {
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1px;
+  left: 20px;
+  top: 15px;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-family: "Advent Pro", sans-serif;
+}
+.txtUno {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: left;
+}
+.txtDos {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.titleCrd {
+  text-align: left;
+  color: #2e2529;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Baloo 2", cursive;
+  padding: 0;
+  margin: 0;
+}
+.txtCrd {
+  font-family: "Baloo 2", cursive;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.visitar {
+  text-decoration: none;
+  color: #deb0b3;
+  margin-right: 5px;
+}
+.link img {
+  width: 30px;
+  margin-top: 5px;
+}
+
+.bar {
+  position: absolute;
+  top: 105px;
+  height: 2px;
+  width: 150px;
+  background-color: transparent;
+}
+
+.emptybar {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(222, 176, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 176, 179, 1) 38%,
+    rgba(237, 237, 237, 1) 70%
+  );
+  transition: 0.3s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 500px;
+  transition: 0.3s ease-out;
+}
+.contentSwiper {
+  width: 100%;
+  height: 75%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --swiper-theme-color: #deb0b3 !important;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 70%;
+    top: 60px;
+  }
+  .tl {
+    height: 250px;
+    width: 300px;
+  }
+  .al {
+    height: 250px;
+    width: 300px;
+  }
+  .rc {
+    height: 250px;
+    width: 300px;
+  }
+  .bl {
+    height: 250px;
+    width: 300px;
+  }
+  .txtCard {
+    height: 250px;
+    width: 300px;
+  }
+  .bar {
+    top: clamp(
+      45px,
+      calc(54px + (70 - 200) * ((100vw - 360px) / (767 - 360))),
+      70px
+    );
+    width: 300px;
+  }
+  .card:hover .filledbar {
+    width: 300px;
+  }
+  .contentSwiper {
+    width: 100%;
+    height: clamp(
+      210px,
+      calc(210px + (550 - 510) * ((100vw - 360px) / (767 - 360))),
+      550px
+    );
+  }
+  .eternaImg img {
+    width: 80px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .txtCrd {
+    text-align: left;
+  }
+  .eternaImg img {
+    width: 120px;
+  }
+  .eternaLinks {
+    padding-left: 10px;
+  }
+  .tl {
+    height: 250px;
+    width: 300px;
+  }
+  .al {
+    height: 250px;
+    width: 300px;
+  }
+  .rc {
+    height: 250px;
+    width: 300px;
+  }
+  .bl {
+    height: 250px;
+    width: 300px;
+  }
+}

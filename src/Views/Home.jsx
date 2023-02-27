@@ -1,14 +1,13 @@
 import styles from "./Home.module.css";
-// import ImageRobot from "../images/back-home-min.png"
 export function Home() {
   return (
     <div className={styles.cover}>
       <div className={styles.coverBackground}>
         <img
-        className={styles.coverBackgroundImage}
-        src={require('../images/back-home-min (1).webp')}
-        alt="Robot"
-      />
+          className={styles.coverBackgroundImage}
+          src={require("../images/back-home-min.webp")}
+          alt="Robot"
+        />
       </div>
       <div className={styles.coverContentWrapper}>
         <h1 className={styles.coverContent}>

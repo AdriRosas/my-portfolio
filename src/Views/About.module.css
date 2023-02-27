@@ -20,16 +20,22 @@
   display: none !important;
 }
 .aboutContent {
-  width: 75%;
+  width: 65%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .aboutHeader {
   font-family: "Advent Pro", sans-serif;
-  color: #050917;
-  text-align: left;
+  color: #46524d;
+  text-align: right;
+  margin-bottom: 30px;
+  width: 400px;
+  text-align: right;
 }
 .aboutTextContainer {
+  width: 400px;
+  text-align: right;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,26 +44,39 @@
 .aboutMeDescription {
   font-family: "Baloo 2", cursive;
   color: #050917;
-  width: 80%;
+  width: 400px;
   line-height: 18px;
 }
 .btnCv {
   width: 80%;
 }
 .imgMe {
-  width: 900px;
-  display: block;
+  height: 100%;
 }
-/* .imgMe {
-  width: 300px;
-  display: none;
-} */
+.imgMe img {
+  width: 300px; 
+}
+@media (max-width: 1265px) {
+  .aboutContainer {
+    --about-min-height: clamp(
+      510px,
+      calc(510px + (500 - 510) * ((100vw - 360px) / (767 - 360))),
+      500px
+    );
+  }
+  .aboutContent {
+    width: 60%;
+  }
+  .imgMe img {
+    width: 250px;
+  }
+}
 @media (max-width: 767px) {
   .aboutContainer {
     --about-min-height: clamp(
       510px,
-      calc(510px + (800 - 510) * ((100vw - 360px) / (767 - 360))),
-      800px
+      calc(510px + (550 - 510) * ((100vw - 360px) / (767 - 360))),
+      550px
     );
   }
   #cardNameAll {
@@ -80,17 +99,24 @@
     flex-direction: column-reverse;
   }
   .aboutHeader {
+    text-align: center;
     font-size: 2rem !important;
   }
   .aboutMeDescription {
+    text-align: center;
     font-size: 0.8rem;
   }
   .imgMe {
     max-width: clamp(
-      150px,
-      calc(150px + (200 - 150) * ((100vw - 768px) / (1024 - 768))),
+      200px,
+      calc(200px + (300 - 150) * ((100vw - 768px) / (1024 - 768))),
       200px
     );
     margin: 100px 0 20px 0;
+  }
+}
+@media (max-width: 350px) {
+  .aboutMeDescription {
+    width: 80%;
   }
 }

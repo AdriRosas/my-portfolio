@@ -1,42 +1,108 @@
 .myworkContainer {
-    --about-min-height: 600px;
-    position: relative;
-    width: 100%;
-    min-height: var(--about-min-height);
-    background-image: linear-gradient(
-      to bottom,
-      #1a7991,
-      #3c858e,
-      #5a908d,
-      #769a90,
-      #8fa497
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  --about-min-height: 950px;
+  position: relative;
+  width: 100%;
+  min-height: var(--about-min-height);
+  background-image: linear-gradient(
+    to bottom,
+    #1a7991,
+    #3c858e,
+    #5a908d,
+    #769a90,
+    #8fa497
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.workHeader {
+  font-family: "Advent Pro", sans-serif;
+  color: #46524d;
+  text-align: right;
+  margin-bottom: 30px;
+  padding-left: 2rem;
+  font-size: 32px;
+  text-align: right;
+}
+.myworkContent {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.carouselCont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* border: 2px solid violet; */
+}
+.robotImg {
+  width: 40%;
+  background-image: url("../images//robotc-min.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+@media (max-width: 1265px) {
+  .workHeader {
+    /* padding-left: 4.5rem; */
+    padding-left: clamp(
+      0px,
+      calc(0px + (300 - 150) * ((100vw - 768px) / (1024 - 768))),
+      200px
+    );
+  }
+}
+@media (max-width: 767px) {
   .myworkContent {
     width: 100vw;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
-  .aboutHeader {
-    color: #46524d;
-    font-size: 2rem;
+  .carouselCont {
+    flex-direction: column-reverse;
+    align-items: center;
   }
-  .divWidth{
-    height: 100px;
-    width: 50px;
-    background-color: #768fc5;
-    margin: 0 auto; /* So as to center the box */
-    transition-property: width, height;
-    /* transition-property: height; */
-    transition-duration: 2s;
-    
+  .robotImg {
+    width: 100%;
+    height: 300px;
+    background-size: 40%;
+    background-position: center bottom;
   }
-  .divWidth:hover{
-    width: 500px;
-    height: 150px;
+  .workHeader {
+    padding-left: clamp(
+      120px,
+      calc(120px + (300 - 120) * ((100vw - 768px) / (1024 - 768))),
+      120px
+    );
   }
+
+  .robotImg {
+    background-position: left 60%;
+  }
+}
+@media (max-width: 480px) {
+  .workHeader {
+    padding-left: clamp(
+      0px,
+      calc(0px + (300 - 120) * ((100vw - 768px) / (1024 - 768))),
+      0px
+    );
+  }
+}
+@media (max-width: 350px) {
+  .robotImg {
+    background-position: left 60%;
+  }
+  .workHeader {
+    margin-bottom: 0px;
+  }
+}

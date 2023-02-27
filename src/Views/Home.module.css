@@ -20,9 +20,10 @@
   padding-top: 125px;
 }
 
-.cover-content {
+.coverContent {
   width: 100%;
   max-width: 320px;
+  text-align: left;
 }
 
 .coverTitle {
@@ -111,6 +112,32 @@
       calc(54px + (125 - 54) * ((100vw - 360px) / (767 - 360))),
       125px
     );
+  }
+
+  .coverTitle {
+    font-size: clamp(
+      65px,
+      calc(65px + (112 - 65) * ((100vw - 360px) / (767 - 360))),
+      112px
+    );
+    line-height: clamp(
+      50px,
+      calc(50px + (83 - 50) * ((100vw - 360px) / (767 - 360))),
+      83px
+    );
+  }
+}
+@media (max-width: 350px) {
+  .coverBackgroundImage {
+    object-position: 45% bottom;
+  }
+
+  .coverContentWrapper {
+    padding-left: clamp(
+      100px,
+      calc(100px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    ); 
   }
 
   .coverTitle {
