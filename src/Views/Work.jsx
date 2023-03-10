@@ -7,7 +7,7 @@ import { Carousel } from "../components/Carousel";
 export function Work() {
   // const [open, setOpen] = useState(false);
   return (
-    <div className={styles.myworkContainer}>
+    <div className={styles.myworkContainer} id="work">
       <h1 className={styles.workHeader}>
         Mi <strong>Experiencia </strong>
       </h1>

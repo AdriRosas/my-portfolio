@@ -3,14 +3,8 @@
   position: relative;
   width: 100%;
   min-height: var(--about-min-height);
-  background-image: linear-gradient(
-    to bottom,
-    #1a7991,
-    #3c858e,
-    #5a908d,
-    #769a90,
-    #8fa497
-  );
+  background: rgb(130,120,227);
+  background: linear-gradient(0deg, rgba(130,120,227,1) 8%, rgba(221,202,149,1) 91%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +16,6 @@
   color: #46524d;
   text-align: right;
   margin-bottom: 30px;
-  padding-left: 2rem;
-  font-size: 32px;
   text-align: right;
 }
 .myworkContent {
@@ -42,8 +34,8 @@
 }
 .robotImg {
   width: 40%;
-  background-image: url("../images//robotc-min.png");
-  background-size: 70%;
+  background-image: url("../images/graf-b-min.png");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -101,10 +93,8 @@
       0px
     );
   }
-  
 }
 @media (max-width: 350px) {
-
   .robotImg {
     height: 150px;
     background-position: left 60%;

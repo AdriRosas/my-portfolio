@@ -3,14 +3,8 @@
   position: relative;
   width: 100%;
   min-height: var(--cover-min-height);
-  background-image: linear-gradient(
-    to bottom,
-    #8fa497,
-    #98b18f,
-    #afba81,
-    #d2be73,
-    #fdbe6f
-  );
+  background: rgb(195,249,253);
+  background: linear-gradient(0deg, rgba(195,249,253,1) 66%, rgba(130,120,227,1) 97%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,8 +12,14 @@
 }
 .contactImage {
   width: 100%;
+  min-height: var(--cover-min-height);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/astro2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 .contactImage img {
   width: 600px;
@@ -27,16 +27,18 @@
 .textContact {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 200px;
+  /* border: 2px solid rgb(255, 94, 0); */
 }
 .contactHeader {
   font-family: "Advent Pro", sans-serif;
   color: #46524d;
-  text-align: right;
+  /* text-align: right; */
   margin-bottom: 60px;
 }
 .containerF {
-  width: 500px;
+  margin-right: 450px;
   display: flex;
   justify-content: center;
 }
@@ -121,7 +123,6 @@
 }
 
 @media (max-width: 1265px) {
-  
   .containerF {
     width: 700px;
   }
@@ -144,6 +145,7 @@
     width: 50px;
     height: 50px;
   }
+
   .contactImage img {
     width: 500px;
   }
@@ -168,7 +170,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   .inputForm {
     width: 350px;
     margin-bottom: 0px;
@@ -216,5 +218,4 @@
   .inputForm {
     width: 250px;
   }
-
 }

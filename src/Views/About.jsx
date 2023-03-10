@@ -1,7 +1,7 @@
 import styles from "./About.module.css";
 export function About() {
   return (
-    <div className={styles.aboutContainer}>
+    <div className={styles.aboutContainer} id="about">
       <div className={styles.aboutContent}>
         <div className={styles.aboutTextContainer}>
           <h1 className={styles.aboutHeader}>

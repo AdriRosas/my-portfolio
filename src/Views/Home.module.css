@@ -1,26 +1,45 @@
 @import url("../Normalize.css");
 .cover {
-  --cover-min-height: 936px;
+  --cover-min-height: 600px;
   position: relative;
   width: 100%;
+  background: rgb(194,240,241);
+  background: linear-gradient(0deg, rgba(194,240,241,1) 0%, rgba(203,195,242,1) 89%);
   min-height: var(--cover-min-height);
+  /* border: 3px solid red; */
+}
+.coverBackground{
+  width: 100%;
+  height: 600px;
+  background-image: url("../images/home-robot.png");
+  background-size: 60%;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .coverBackgroundImage {
-  width: 100%;
+  padding-right: 200px;
+  margin-bottom: 100px;
 }
 
 .coverContentWrapper {
+  /* border: 4px solid gold; */
   position: absolute;
   top: 0;
   left: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
   width: 100%;
-  padding-left: 26.5%;
-  padding-top: 125px;
+  height: 100%;
+  /* border: 2px solid red; */
 }
 
 .coverContent {
+  margin-bottom: 100px;
   width: 100%;
   max-width: 320px;
   text-align: left;
@@ -129,14 +148,14 @@
       50px,
       calc(50px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
       70px
-    ); 
+    );
   }
   .coverSubtitle {
     padding-left: clamp(
       50px,
       calc(50px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
       70px
-    ); 
+    );
   }
 }
 @media (max-width: 420px) {
@@ -156,7 +175,7 @@
       100px,
       calc(100px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
       70px
-    ); 
+    );
   }
 
   .coverTitle {
@@ -174,13 +193,13 @@
       10px,
       calc(10px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
       70px
-    ); 
+    );
   }
   .coverSubtitle {
     padding-left: clamp(
       10px,
       calc(10px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
       70px
-    ); 
+    );
   }
 }

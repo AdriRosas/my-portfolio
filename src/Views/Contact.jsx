@@ -3,7 +3,8 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 export function Contact() {
   return (
-    <div className={styles.contactContainer}>
+    <div className={styles.contactContainer} id="contact">
+     <div className={styles.contactImage}>
       <div className={styles.textContact}>
         <h1 className={styles.contactHeader}>
           Contácta<strong>Me</strong>
@@ -72,8 +73,8 @@ export function Contact() {
           </a>
         </div>
       </div>
-      <div className={styles.contactImage}>
-        <img src={require("../images/graf-b-min.png")} alt="Adri" />
+      
+        {/* <img src={require("../images/astronautito-3.png")} alt="Adri" /> */}
       </div>
     </div>
   );

@@ -4,14 +4,8 @@
   /* position: relative; */
   width: 100%;
   min-height: var(--about-min-height);
-  background-image: linear-gradient(
-    to bottom,
-    #d5abab,
-    #bf98ae,
-    #998bb1,
-    #6283aa,
-    #1a7991
-  );
+  background: rgb(221,202,149);
+background: linear-gradient(0deg, rgba(221,202,149,1) 11%, rgba(194,240,241,1) 84%);
   display: flex;
   justify-content: center;
   align-items: center;
