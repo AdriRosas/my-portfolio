@@ -1,11 +1,8 @@
 import styles from "./Work.module.css";
-// import React, { useState } from "react";
-// import Button from "react-bootstrap/Button";
-// import Collapse from "react-bootstrap/Collapse";
 import { Carousel } from "../components/Carousel";
 
+
 export function Work() {
-  // const [open, setOpen] = useState(false);
   return (
     <div className={styles.myworkContainer} id="work">
       <h1 className={styles.workHeader}>
@@ -13,8 +10,17 @@ export function Work() {
       </h1>
       <div className={styles.myworkContent}>
         <div className={styles.carouselCont}>
-          <div className={styles.robotImg}></div>
+          <div className={styles.carouselContain}>
+          <div className={styles.robotImg}>
+            
+          <img src={require("../images/graf-b-min.png")} alt="go" />
+          </div>
             <Carousel />
+            {/* <div className=""></div> */}
+          <div className={styles.robotImgDos}>
+          <img src={require("../images/graf-b-min2.png")} alt="go" />
+          </div>
+          </div>
         </div>
       </div>
     </div>

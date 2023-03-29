@@ -34,7 +34,7 @@ export function About() {
         <div className={styles.imgMe}>
           <img
             className={styles.coverBackgroundImage}
-            src={require("../images/adr-min.webp")}
+            src={require("../images/adri.png")}
             alt="Adri"
           />
         </div>

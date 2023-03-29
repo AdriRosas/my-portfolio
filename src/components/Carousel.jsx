@@ -1,15 +1,104 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useState } from "react";
+import TiendaLegalModal from "../components/modals/TiendaLegal";
+import AleganttoModal from "./modals/AleganttoModal";
+import ReclutaModal from "./modals/ReclutaModal";
+import BorregoLavinModal from "./modals/BorregoLavinModal";
+import { RiExternalLinkLine } from "react-icons/ri";
 import styles from "./Carousel.module.css";
-import { Pagination } from "swiper";
+import { EffectFade, Navigation, Pagination } from "swiper";
+import { AiOutlineEye } from "react-icons/ai";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 export function Carousel() {
+  const [modalTlShow, setModalTlShow] = useState(false);
+  const [modalAlShow, setModalAlShow] = useState(false);
+  const [modalRcShow, setModalRcShow] = useState(false);
+  const [modalBlShow, setModalBlShow] = useState(false);
+  const pagination = {
+    clickable: true,
+  };
   return (
     <div className={styles.container}>
+      <div className={styles.contentSwiper}>
+        <Swiper
+          pagination={pagination}
+          effect={"fade"}
+          modules={[EffectFade, Navigation, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className={styles.card}>
+              <div className={styles.tl}>
+                <button
+                  className={styles.cta}
+                  onClick={() => setModalTlShow(true)}
+                >
+                  <AiOutlineEye className={styles.icon} />
+                  <span className={styles.buttonText}>Detalles</span>
+                </button>
+                <TiendaLegalModal
+                  show={modalTlShow}
+                  onHide={() => setModalTlShow(false)}
+                />
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.card}>
+              <div className={styles.al}>
+                <button
+                  className={styles.cta}
+                  onClick={() => setModalAlShow(true)}
+                >
+                  <AiOutlineEye className={styles.icon} />
+                  <span className={styles.buttonText}>Detalles</span>
+                </button>
+                <AleganttoModal
+                  show={modalAlShow}
+                  onHide={() => setModalAlShow(false)}
+                />
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.card}>
+              <div className={styles.rc}>
+                <button
+                  className={styles.cta}
+                  onClick={() => setModalRcShow(true)}
+                >
+                  <AiOutlineEye className={styles.icon} />
+                  <span className={styles.buttonText}>Detalles</span>
+                </button>
+                <ReclutaModal
+                  show={modalRcShow}
+                  onHide={() => setModalRcShow(false)}
+                />
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.card}>
+              <div className={styles.bl}>
+                <button
+                  className={styles.cta}
+                  onClick={() => setModalBlShow(true)}
+                >
+                  <AiOutlineEye className={styles.icon} />
+                  <span className={styles.buttonText}>Detalles</span>
+                </button>
+                <BorregoLavinModal
+                  show={modalBlShow}
+                  onHide={() => setModalBlShow(false)}
+                />
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
       <div className={styles.eternaCard}>
-        <div className={styles.eternaImg}>
-          <img src={require("../images/eterna-mini (1).png")} alt="go" />
-        </div>
         <div className={styles.eternaLinks}>
           <a
             href="https://eterna.digital/"
@@ -17,175 +106,11 @@ export function Carousel() {
             className={styles.link}
             rel="noreferrer"
           >
-            <p className={styles.titleCrd}>Eterna Digital</p>
+            <p className={styles.titleCrd}>Eterna Digital</p><RiExternalLinkLine />
           </a>
-          <p className={styles.txtCrd}>Octubre 2019 - Noviembre 2023</p>
-          <a
-            href="https://eterna.digital/"
-            target="_blank"
-            className={styles.link}
-            rel="noreferrer"
-          >
-            <p className={styles.visitar}>Visitar</p>
-            <img
-              src={require("../images/icons/flecha-correcta.png")}
-              alt="go"
-            />
-          </a>
+          <p className={styles.txtCrd}>Octubre 2019 -<br/> Noviembre 2023</p>
+          
         </div>
-      </div>
-      <div className={styles.contentSwiper}>
-        <Swiper
-          direction={"vertical"}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className={styles.swiper}
-        >
-          <SwiperSlide className={styles.item}>
-            <div className={styles.card}>
-              <div className={styles.tl}>
-                <div className={styles.contentCard}>
-                  <div className={styles.bar}>
-                    <div className={styles.emptybar}></div>
-                    <div className={styles.filledbar}></div>
-                  </div>
-                  <div className={styles.txtCard}>
-                    <p className={styles.title}>Tienda Legal</p>
-                    <p className={styles.txtUno}>
-                      Plataforma especializada en gestión legal automatizada
-                      para empresas y despachos
-                    </p>
-                    <p className={styles.txtDos}>
-                      Desarrollo de interfaz y conexión con base de datos con{" "}
-                      <strong>Vue</strong>, <strong>Vuex</strong> y{" "}
-                      <strong>Firebase</strong>
-                    </p>
-                    <a
-                      href="https://www.tlegal.app"
-                      target="_blank"
-                      className={styles.link}
-                      rel="noreferrer"
-                    >
-                      <p className={styles.visitar}>Visitar</p>
-                      <img
-                        src={require("../images/icons/flecha-correcta.png")}
-                        alt="go"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <div className={styles.card}>
-              <div className={styles.al}>
-                <div className={styles.contentCard}>
-                  <div className={styles.bar}>
-                    <div className={styles.emptybar}></div>
-                    <div className={styles.filledbar}></div>
-                  </div>
-                  <div className={styles.txtCard}>
-                    <p className={styles.title}>Alegantto</p>
-                    <p className={styles.txtUno}>
-                      Despacho de Abogados especialistas en derecho concursal
-                    </p>
-                    <p className={styles.txtDos}>
-                      Desarrollo de interfaz y conexión con base de datos con{" "}
-                      <strong>Vue</strong> y <strong>Vuetify</strong>
-                    </p>
-                    <a
-                      href="http://alegantto.com/"
-                      target="_blank"
-                      className={styles.link}
-                      rel="noreferrer"
-                    >
-                      <p className={styles.visitar}>Visitar</p>
-                      <img
-                        src={require("../images/icons/flecha-correcta.png")}
-                        alt="go"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <div className={styles.card}>
-              <div className={styles.rc}>
-                <div className={styles.contentCard}>
-                  <div className={styles.bar}>
-                    <div className={styles.emptybar}></div>
-                    <div className={styles.filledbar}></div>
-                  </div>
-                  <div className={styles.txtCard}>
-                    <p className={styles.title}>Reclutachat</p>
-                    <p className={styles.txtUno}>
-                      Sistema de automatización inteligente para el
-                      reclutamiento masivo
-                    </p>
-                    <p className={styles.txtDos}>
-                      Desarrollo de interfaz y conexión con base de datos con{" "}
-                      <strong>Vue</strong>, <strong>Vuex</strong> y{" "}
-                      <strong>Firebase</strong>
-                    </p>
-                    <a
-                      href="https://www.reclutachat.com/"
-                      target="_blank"
-                      className={styles.link}
-                      rel="noreferrer"
-                    >
-                      <p className={styles.visitar}>Visitar</p>
-                      <img
-                        src={require("../images/icons/flecha-correcta.png")}
-                        alt="go"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <div className={styles.card}>
-              <div className={styles.bl}>
-                <div className={styles.contentCard}>
-                  <div className={styles.bar}>
-                    <div className={styles.emptybar}></div>
-                    <div className={styles.filledbar}></div>
-                  </div>
-                  <div className={styles.txtCard}>
-                    <p className={styles.title}>Borrego Lavín</p>
-                    <p className={styles.txtUno}>
-                      Despacho jurídico especializado en asuntos relacionados a
-                      la materia penal.
-                    </p>
-                    <p className={styles.txtDos}>
-                      Desarrollo de interfaz y conexión con base de datos con{" "}
-                      <strong>Vue</strong> y <strong>Vuetify</strong>
-                    </p>
-                    <a
-                      href="https://borregolavinabogados.com/"
-                      target="_blank"
-                      className={styles.link}
-                      rel="noreferrer"
-                    >
-                      <p className={styles.visitar}>Visitar</p>
-                      <img
-                        src={require("../images/icons/flecha-correcta.png")}
-                        alt="go"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
       </div>
     </div>
   );

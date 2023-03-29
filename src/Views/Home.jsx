@@ -2,13 +2,8 @@ import styles from "./Home.module.css";
 export function Home() {
   return (
     <div className={styles.cover} id="home">
-      <div className={styles.coverBackground}>
-        {/* <img
-          className={styles.coverBackgroundImage}
-          src={require("../images/astro.png")}
-          alt="Robot"
-        /> */}
-      </div>
+      <div className={styles.coverCont}>
+      
       <div className={styles.coverContentWrapper}>
         <h1 className={styles.coverContent}>
           <p className={styles.coverTitle}>
@@ -17,6 +12,14 @@ export function Home() {
           </p>
           <p className={styles.coverSubtitle}>Front end developer</p>
         </h1>
+      </div>
+      <div className={styles.coverBackground}>
+        {/* <img
+          className={styles.coverBackgroundImage}
+          src={require("../images/robi.png")}
+          alt="Robot"
+        /> */}
+      </div>
       </div>
     </div>
   );

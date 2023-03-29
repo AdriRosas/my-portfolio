@@ -4,14 +4,16 @@ import Form from "react-bootstrap/Form";
 export function Contact() {
   return (
     <div className={styles.contactContainer} id="contact">
+      <div className={styles.stars}>
      <div className={styles.contactImage}>
+      <div className={styles.containerF}>
       <div className={styles.textContact}>
         <h1 className={styles.contactHeader}>
           Contácta<strong>Me</strong>
         </h1>
       </div>
-      <div className={styles.containerF}>
         <Form className={styles.formCont}>
+        <p className={styles.textForm}>Me encantaría escuchar tus ideas. ¡Trabajemos juntos!</p>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Control
               type="text"
@@ -47,7 +49,7 @@ export function Contact() {
             <img src={require("../images/icons/flecha-correcta.png")} alt="go" />
           </Button>
         </Form>
-        <span className={styles.span}></span>
+        {/* <span className={styles.span}></span>
         <div className={styles.socialMedia}>
           <a
             href="https://api.whatsapp.com/send?phone=5587945478"
@@ -71,10 +73,11 @@ export function Contact() {
             className={styles.iconsB}
           >
           </a>
-        </div>
+        </div> */}
       </div>
       
         {/* <img src={require("../images/astronautito-3.png")} alt="Adri" /> */}
+      </div>
       </div>
     </div>
   );

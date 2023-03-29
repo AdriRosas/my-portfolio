@@ -1,0 +1,59 @@
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background: rgba(239, 239, 239, 0.4);
+  backdrop-filter: blur(10px);
+  background-clip: padding-box;
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  padding: 10px 0 20px 0;
+}
+.bodyModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Baloo 2", cursive;
+}
+.headerModal {
+  width: 90%;
+}
+.actionModal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.linkModal {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.linkModal:hover {
+  color: green;
+}
+
+.linkModal:active {
+  color: red;
+}
+.titleModal {
+  font-size: 2rem;
+  font-family: "Advent Pro", sans-serif;
+}
+
+.imagesBody {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  height: 320px;
+  overflow-y: auto;
+}
+.imagesBody img {
+  width: 90%;
+  margin-bottom: 25px;
+}

@@ -1,11 +1,14 @@
 @import url("../Normalize.css");
 .aboutContainer {
   --about-min-height: 580px;
-  /* position: relative; */
   width: 100%;
   min-height: var(--about-min-height);
-  background: rgb(221,202,149);
-background: linear-gradient(0deg, rgba(221,202,149,1) 11%, rgba(194,240,241,1) 84%);
+  background: rgb(221, 202, 149);
+  background: linear-gradient(
+    0deg,
+    rgba(221, 202, 149, 1) 11%,
+    rgba(194, 240, 241, 1) 84%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +28,7 @@ background: linear-gradient(0deg, rgba(221,202,149,1) 11%, rgba(194,240,241,1) 8
   color: #46524d;
   text-align: right;
   margin-bottom: 30px;
-  width: 400px;
+  /* width: 400px; */
   text-align: right;
 }
 .aboutTextContainer {
@@ -37,10 +40,8 @@ background: linear-gradient(0deg, rgba(221,202,149,1) 11%, rgba(194,240,241,1) 8
   justify-content: center;
 }
 .aboutMeDescription {
-  /* width: 400px; */
   font-family: "Baloo 2", cursive;
   color: #050917;
-  /* width: 400px; */
   line-height: 18px;
 }
 .btnCv {
@@ -51,9 +52,10 @@ background: linear-gradient(0deg, rgba(221,202,149,1) 11%, rgba(194,240,241,1) 8
   margin-left: 5%;
   display: flex;
   justify-content: center;
+  /* border: 2px solid red; */
 }
 .imgMe img {
-  max-width: 75%;
+  max-width: 100%;
   height: auto;
 }
 @media (max-width: 1265px) {
@@ -97,7 +99,6 @@ background: linear-gradient(0deg, rgba(221,202,149,1) 11%, rgba(194,240,241,1) 8
   }
   .aboutHeader {
     text-align: center;
-    font-size: 2rem !important;
   }
   .aboutTextContainer {
     width: 100%;
@@ -105,6 +106,7 @@ background: linear-gradient(0deg, rgba(221,202,149,1) 11%, rgba(194,240,241,1) 8
     align-items: center;
   }
   .aboutMeDescription {
+    /* width: calc(420px + (400 - 420) * ((100vw - 767px) / (1024 - 767))); */
     text-align: center;
     font-size: 0.8rem;
   }
@@ -116,6 +118,6 @@ background: linear-gradient(0deg, rgba(221,202,149,1) 11%, rgba(194,240,241,1) 8
 }
 @media (max-width: 420px) {
   .aboutMeDescription {
-    width: 80%;
+    padding: 0 20px 0 20px;
   }
 }
