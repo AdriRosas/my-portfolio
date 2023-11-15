@@ -59,14 +59,10 @@
 } */
 
 @media (max-width: 1440px){
-  .carouselContain {
-    /* background-size: 70%; */
-  }
+
 }
 @media (max-width: 1280px) {
-  .carouselContain {
-    /* background-size: 75%; */
-  }
+
 
 }
 @media (max-width: 767px) {
@@ -77,11 +73,7 @@
     align-items: center;
     position: relative;
   }
-  .carouselContain {
-    /* background-image: url("../images/fondotele-m.png");
-    background-size: 80%;
-    background-position: center bottom; */
-  }
+
   .carouselCont {
     flex-direction: column-reverse;
     align-items: center;
@@ -134,12 +126,7 @@
       0px
     );
   }
-  .carouselContain {
-    /* width: 100%;
-    height: 100vh; */
 
-
-  }
 }
 @media (max-width: 350px) {
   .robotImg {

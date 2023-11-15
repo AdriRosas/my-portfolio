@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { Carousel } from "../components/Carousel";
+// import { Carousel } from "../components/Carousel";
 import styles from "../components/styles/Work.module.css";
-import Televison from "../components/Television"
+// import Televison from "../components/Television"
 import Swipe from "../components/Swipe"
 import ModalGeneral from "../components/modals/ModalGeneral"
 
 
 export function Work() {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide] = useState(0);
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
   const [projectId, setProjectId] = useState(null); 
@@ -19,9 +19,9 @@ export function Work() {
 }
 
   // Callback function to update the active slide position
-  const handleSlideChange = (index) => {
-    setActiveSlide(index);
-  };
+  // const handleSlideChange = (index) => {
+  //   setActiveSlide(index);
+  // };
 
   return (
     <div className={styles.myworkContainer} id="work">

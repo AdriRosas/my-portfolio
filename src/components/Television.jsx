@@ -1,6 +1,6 @@
 import React from 'react';
 import "../components/styles/Television.css"
-import { Carousel } from './Carousel';
+// import { Carousel } from './Carousel';
 
 
 function Television() {

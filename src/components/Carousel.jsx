@@ -4,7 +4,6 @@ import TiendaLegalModal from "../components/modals/TiendaLegal";
 import AleganttoModal from "./modals/AleganttoModal";
 import ReclutaModal from "./modals/ReclutaModal";
 import BorregoLavinModal from "./modals/BorregoLavinModal";
-import { RiExternalLinkLine } from "react-icons/ri";
 import styles from "./styles/Carousel.module.css";
 import { EffectFade, Navigation, Pagination } from "swiper";
 import { AiOutlineEye } from "react-icons/ai";

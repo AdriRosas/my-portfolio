@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import { Carousel } from "../../components/Carousel";
-import Television from "../../components/Television";
+// import Television from "../../components/Television";
 
 function ModalGeneral({ show, onHide, fullscreen, projectId }) {
     console.log(projectId, "id")
