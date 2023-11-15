@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4f571d60.css",
+    "main.js": "/static/js/main.503877a0.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/adri.png": "/static/media/adri.6054c4e075cb2565dff1.png",
+    "static/media/robi.png": "/static/media/robi.8be30c94ccbbb2c99a1b.png",
+    "static/media/galaxy.png": "/static/media/galaxy.5d7a7e619b387a6aa101.png",
+    "static/media/astro2.png": "/static/media/astro2.e5d11ebd93a0aa85ce9d.png",
+    "static/media/alegantto.png": "/static/media/alegantto.db4a100ac7aa6b24b11d.png",
+    "static/media/borrego-lavin.png": "/static/media/borrego-lavin.c1f84d25cc61891f0642.png",
+    "static/media/tl1.PNG": "/static/media/tl1.c9930d043200894f9076.PNG",
+    "static/media/bl3.jpg": "/static/media/bl3.def40045bca33c98a6aa.jpg",
+    "static/media/bl1.jpg": "/static/media/bl1.a6e73ebd1522e10c4a09.jpg",
+    "static/media/rc4.jpg": "/static/media/rc4.1e30fd89d9f2bba04c54.jpg",
+    "static/media/al2.jpg": "/static/media/al2.4829c102e7bd048cf917.jpg",
+    "static/media/rc3.jpg": "/static/media/rc3.045dba72a42798b6b685.jpg",
+    "static/media/bl2.jpg": "/static/media/bl2.64d61f6db289ec4f7929.jpg",
+    "static/media/rc2.jpg": "/static/media/rc2.51007b09cc3e37d1e1c2.jpg",
+    "static/media/al3.jpg": "/static/media/al3.47bc3dfbf227042afc84.jpg",
+    "static/media/al1.jpg": "/static/media/al1.ffa8d92109e2e847f6ec.jpg",
+    "static/media/tl2.jpg": "/static/media/tl2.8c94be9435deee355671.jpg",
+    "static/media/rc1.jpg": "/static/media/rc1.0924028f8875b66f8593.jpg",
+    "static/media/backfull.png": "/static/media/backfull.3dbf79502cc1d51e0d88.png",
+    "static/media/tl3.jpg": "/static/media/tl3.661f3edf8c6590798ce8.jpg",
+    "static/media/reclutachat.png": "/static/media/reclutachat.be177eafe082a2bf20c2.png",
+    "static/media/eterna-mini.png": "/static/media/eterna-mini.a469b7f113262018b5b4.png",
+    "static/media/sps2.png": "/static/media/sps2.b81f69b697f721955d95.png",
+    "static/media/sps.png": "/static/media/sps.6e1a180836b056f30e1e.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.ddb8457207165f45e6f9.png",
+    "static/media/eterna-mini2.png": "/static/media/eterna-mini2.01facd98ab4c7373cd92.png",
+    "static/media/gorjeo.png": "/static/media/gorjeo.769e97116fe2301dd40f.png",
+    "static/media/flecha-correcta.png": "/static/media/flecha-correcta.c9a178c29dd2fd9cefb5.png",
+    "index.html": "/index.html",
+    "main.4f571d60.css.map": "/static/css/main.4f571d60.css.map",
+    "main.503877a0.js.map": "/static/js/main.503877a0.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f571d60.css",
+    "static/js/main.503877a0.js"
+  ]
+}
