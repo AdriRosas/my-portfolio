@@ -1,0 +1,151 @@
+.myworkContainer {
+  /* position: relative; */
+  width: 100%;
+  height: 200vh;
+  background: rgb(152,97,255);
+  background: linear-gradient(0deg, rgba(152,97,255,1) 0%, rgba(221,202,149,1) 100%);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: content-box;
+  /* border: 2px solid red; */
+}
+
+.workHeader {
+  font-family: "Advent Pro", sans-serif;
+  color: #46524d;
+  text-align: right;
+  margin-bottom: 30px;
+  text-align: right;
+}
+.myworkContent {
+  /* border: 2px solid green; */
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: absolute; */
+  /* background-image: url("../images/fondotele.png"); */
+  background-repeat: no-repeat;
+  background-size:   70% ;
+  background-position:  center;
+  z-index: 100 !important;
+  /* border: 5px solid rgb(71, 24, 243); */
+  
+}
+
+.carouselContain {
+  /* background-color:  #fff; */
+  width: 60%;
+  /* height: 60% !important; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* COLORES DE BORDE */
+/* .workBackground0 {
+  background-color: red;
+}
+
+.workBackground1 {
+  background-color: blue;
+}
+
+.workBackground2 {
+  background-color: green;
+} */
+
+@media (max-width: 1440px){
+  .carouselContain {
+    /* background-size: 70%; */
+  }
+}
+@media (max-width: 1280px) {
+  .carouselContain {
+    /* background-size: 75%; */
+  }
+
+}
+@media (max-width: 767px) {
+  .myworkContent {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .carouselContain {
+    /* background-image: url("../images/fondotele-m.png");
+    background-size: 80%;
+    background-position: center bottom; */
+  }
+  .carouselCont {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .robotImg {
+    max-width: calc(750px + (600 - 750) * ((100vw - 768px) / (1024 - 768)));
+    height: 300px;
+    background-size: 80%;
+    background-position: center bottom;
+  }
+  .workHeader {
+    padding-left: clamp(
+      120px,
+      calc(120px + (300 - 120) * ((100vw - 768px) / (1024 - 768))),
+      120px
+    );
+  }
+}
+@media (max-width: 800px){
+
+}
+@media (max-width: 480px) {
+  .myworkContent {
+    width: 100vw;
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .carouselContain {
+    width: 100%;
+
+    background-size: 100%;
+    background-position: center 100%;
+  }
+  .workHeader {
+    margin-bottom: 0%;
+    text-align: center;
+  }
+  .myworkContent {
+    width: 100vw;
+    /* height: 100%; */
+    justify-content: flex-start;
+  }
+  .workHeader {
+    padding-left: clamp(
+      0px,
+      calc(0px + (300 - 120) * ((100vw - 768px) / (1024 - 768))),
+      0px
+    );
+  }
+  .carouselContain {
+    /* width: 100%;
+    height: 100vh; */
+
+
+  }
+}
+@media (max-width: 350px) {
+  .robotImg {
+    background-size: 70%;
+  }
+  .workHeader {
+    margin-bottom: 0px;
+  }
+}

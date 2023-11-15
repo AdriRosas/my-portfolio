@@ -5,19 +5,28 @@ import AleganttoModal from "./modals/AleganttoModal";
 import ReclutaModal from "./modals/ReclutaModal";
 import BorregoLavinModal from "./modals/BorregoLavinModal";
 import { RiExternalLinkLine } from "react-icons/ri";
-import styles from "./Carousel.module.css";
+import styles from "./styles/Carousel.module.css";
 import { EffectFade, Navigation, Pagination } from "swiper";
 import { AiOutlineEye } from "react-icons/ai";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-export function Carousel() {
+
+export function Carousel({ onSlideChange }) {
   const [modalTlShow, setModalTlShow] = useState(false);
   const [modalAlShow, setModalAlShow] = useState(false);
   const [modalRcShow, setModalRcShow] = useState(false);
   const [modalBlShow, setModalBlShow] = useState(false);
   const pagination = {
     clickable: true,
+    // renderBullet: function (index, className) {
+    //   return '<span class="' + className + '" >' + (index + 1) + '</span>';
+    // },
+  };
+  const handleSlideChange = (swiper) => {
+    // Get the active slide index from Swiper
+    const activeSlideIndex = swiper.activeIndex;
+    onSlideChange(activeSlideIndex); // Call the callback function from the Work component
   };
   return (
     <div className={styles.container}>
@@ -27,6 +36,7 @@ export function Carousel() {
           effect={"fade"}
           modules={[EffectFade, Navigation, Pagination]}
           className="mySwiper"
+          onSlideChange={(swiper) => handleSlideChange(swiper)}
         >
           <SwiperSlide>
             <div className={styles.card}>
@@ -97,20 +107,6 @@ export function Carousel() {
             </div>
           </SwiperSlide>
         </Swiper>
-      </div>
-      <div className={styles.eternaCard}>
-        <div className={styles.eternaLinks}>
-          <a
-            href="https://eterna.digital/"
-            target="_blank"
-            className={styles.link}
-            rel="noreferrer"
-          >
-            <p className={styles.titleCrd}>Eterna Digital</p><RiExternalLinkLine />
-          </a>
-          <p className={styles.txtCrd}>Octubre 2019 -<br/> Noviembre 2023</p>
-          
-        </div>
       </div>
     </div>
   );

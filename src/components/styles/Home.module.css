@@ -1,0 +1,255 @@
+@import url("../styles/Normalize.css");
+.cover {
+  --cover-min-height: 600px;
+  position: relative;
+  width: 100%;
+  background: rgb(194, 240, 241);
+  background: linear-gradient(
+    0deg,
+    rgba(194, 240, 241, 1) 41%,
+    rgba(169, 160, 240, 1) 93%
+  );
+  min-height: var(--cover-min-height);
+  display: flex;
+  justify-content: center;
+}
+.coverCont {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.coverBackground {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-image: url("../../images/robi.png");
+  background-size: 65% ;
+  background-repeat: no-repeat;
+  background-position: 75% center;
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.coverBackgroundImage {
+  width: 100%;
+}
+
+.coverContentWrapper {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 10%;
+  /* height: 100%; */
+  /* border: 2px solid rgb(32, 27, 27); */
+  position: absolute;
+  z-index: 10;
+}
+
+.coverContent {
+  /* width: 100%; */
+  text-align: right;
+  /* border: 2px solid rgb(212, 172, 172); */
+}
+
+.coverTitle {
+  font-family: Advent Pro, sans-serif;
+  color: #46524d;
+  font-size: 7rem;
+  line-height: 5.5rem;
+  font-weight: lighter;
+}
+
+.coverTitle span {
+  display: block;
+  margin-left: -0.4rem;
+  font-weight: 700;
+}
+
+.coverSubtitle {
+  margin-top: 4px;
+  font-size: 1.2rem;
+  color: #deb0b3;
+  font-weight: lighter;
+  font-family: "Baloo 2", cursive;
+}
+
+@media (max-width: 1440px) {
+  .coverContentWrapper {
+  margin-top: 5%;
+}
+  /* .coverBackground {
+    position: relative;
+    width: 100%;
+    height: var(--cover-min-height);
+  } */
+
+  /* .coverBackgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% bottom;
+  } */
+
+  /* .coverContentWrapper {
+    padding-left: clamp(
+      180px,
+      calc(180px + (333 - 180) * ((100vw - 1024px) / (1265 - 1024))),
+      333px
+    );
+  } */
+}
+
+@media (max-width: 1023px) {
+  /* .coverContentWrapper {
+    padding-left: clamp(
+      70px,
+      calc(70px + (180 - 70) * ((100vw - 768px) / (1023 - 768))),
+      180px
+    );
+  } */
+
+  /* .coverBackgroundImage {
+    object-position: 50% bottom;
+  } */
+}
+
+@media (max-width: 767px) {
+  .coverCont {
+    width: 80%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coverTitle {
+    font-size: clamp(
+      4.5rem,
+      calc(4.5rem + (8 - 4.5) * ((100vw - 360px) / (767 - 360))),
+      112px
+    );
+    line-height: 4rem;
+    text-align: center;
+  }
+  .coverSubtitle {
+    text-align: center;
+  }
+  .coverBackground {
+    width: 100%;
+    margin-top: -30px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .coverBackgroundImage {
+    width: 70%;
+  }
+
+  /* .cover {
+    --cover-min-height: clamp(
+      510px,
+      calc(510px + (936 - 510) * ((100vw - 360px) / (767 - 360))),
+      936px
+    );
+  } */
+
+  /* .coverBackgroundImage {
+    object-position: 50% bottom;
+  } */
+
+  /* .coverContentWrapper {
+    padding-left: clamp(
+      20px,
+      calc(20px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    );
+    padding-top: clamp(
+      54px,
+      calc(54px + (125 - 54) * ((100vw - 360px) / (767 - 360))),
+      125px
+    );
+  } */
+
+  /* .coverTitle {
+    font-size: clamp(
+      47px,
+      calc(47px + (112 - 65) * ((100vw - 360px) / (767 - 360))),
+      112px
+    );
+    line-height: clamp(
+      40px,
+      calc(40px + (83 - 50) * ((100vw - 360px) / (767 - 360))),
+      83px
+    );
+    padding-left: clamp(
+      50px,
+      calc(50px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    );
+  } */
+  /* .coverSubtitle {
+    padding-left: clamp(
+      50px,
+      calc(50px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    );
+  } */
+}
+@media (max-width: 420px) {
+  /* .coverTitle {
+    font-family: Advent Pro, sans-serif;
+    color: #46524d;
+    font-size: 5rem;
+    line-height: 5.2rem;
+    font-weight: lighter;
+  } */
+  .coverBackground {
+    flex-direction: column-reverse;
+    height: 80vh;
+    background-image: url("../../images/robi.png");
+    background-size: 150%;
+    background-position: center center;
+
+  }
+  /* .coverBackgroundImage {
+    object-position: 45% bottom;
+  } */
+
+  .coverContentWrapper {
+    margin-top: 25%;
+    padding-left: clamp(
+      100px,
+      calc(100px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    );
+  }
+
+  /* .coverTitle {
+    font-size: clamp(
+      45px,
+      calc(45px + (112 - 65) * ((100vw - 360px) / (767 - 360))),
+      112px
+    );
+    line-height: clamp(
+      35px,
+      calc(35px + (83 - 50) * ((100vw - 360px) / (767 - 360))),
+      83px
+    );
+    padding-left: clamp(
+      10px,
+      calc(10px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    );
+  } */
+  /* .coverSubtitle {
+    padding-left: clamp(
+      10px,
+      calc(10px + (70 - 20) * ((100vw - 360px) / (767 - 360))),
+      70px
+    );
+  } */
+}

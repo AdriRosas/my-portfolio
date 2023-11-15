@@ -1,10 +1,12 @@
-import "./App.css";
+import React from 'react'
+import "../src/App.css";
+import "../src/components/styles/Normalize.css"
 // import Nav from "./Nav"
-import { Home } from "./Views/Home";
-import { About } from "./Views/About";
-import { Work } from "./Views/Work";
-import { Contact } from "./Views/Contact";
-import { Footer } from "./Views/Footer.jsx";
+import { Home } from "./sections/Home";
+import { About } from "./sections/About";
+import { Work } from "./sections/Work";
+import { Contact } from "./sections/Contact";
+import { Footer } from "./sections/Footer.jsx";
 // import Nav from "./components/Nav";
 
 function App() {

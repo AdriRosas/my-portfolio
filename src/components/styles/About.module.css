@@ -1,0 +1,124 @@
+@import url("../styles/Normalize.css");
+.aboutContainer {
+  --about-min-height: 580px;
+  width: 100%;
+  min-height: var(--about-min-height);
+  background: rgb(221, 202, 149);
+  background: linear-gradient(
+    0deg,
+    rgba(221, 202, 149, 1) 11%,
+    rgba(194, 240, 241, 1) 84%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cardNameAll {
+  display: none !important;
+}
+.aboutContent {
+  border: 2px solid res;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+.aboutHeader {
+  font-family: "Advent Pro", sans-serif;
+  color: #46524d;
+  text-align: right;
+  margin-bottom: 30px;
+  /* width: 400px; */
+  text-align: right;
+}
+.aboutTextContainer {
+  /* width: 55%; */
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.aboutMeDescription {
+  font-family: "Baloo 2", cursive;
+  color: #050917;
+  line-height: 18px;
+}
+.btnCv {
+  width: 80%;
+}
+.imgMe {
+  width: 900px;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+.imgMe img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1265px) {
+  .aboutContainer {
+    --about-min-height: clamp(
+      510px,
+      calc(510px + (500 - 510) * ((100vw - 360px) / (767 - 360))),
+      500px
+    );
+  }
+  .aboutContent {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .aboutContainer {
+    --about-min-height: clamp(
+      510px,
+      calc(510px + (550 - 510) * ((100vw - 360px) / (767 - 360))),
+      550px
+    );
+  }
+  #cardNameAll {
+    margin-top: clamp(
+      200px,
+      calc(200px + (70 - 200) * ((100vw - 360px) / (767 - 360))),
+      70px
+    );
+    width: 100% !important;
+    display: block !important;
+  }
+  .infName {
+    justify-content: center;
+  }
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .aboutContent {
+    width: 70% !important;
+    flex-direction: column-reverse;
+  }
+  .aboutHeader {
+    text-align: center;
+  }
+  .aboutTextContainer {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .aboutMeDescription {
+    /* width: calc(420px + (400 - 420) * ((100vw - 767px) / (1024 - 767))); */
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .imgMe {
+    width: 40%;
+    margin-left: 0%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .aboutMeDescription {
+    padding: 0 20px 0 20px;
+  }
+}

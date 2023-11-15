@@ -1,0 +1,213 @@
+.container {
+  width: 80%;
+  top: 10px;
+  margin-left: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  /* border: 2px solid red; */
+}
+.contentSwiper {
+  width: 100%;
+height: 100%;
+  border: 1px solid #eee;
+}
+:root {
+  --swiper-theme-color: #ff81d5 !important;
+}
+.card {
+  /* margin-top: 25px; */
+  width: 100%;
+  height: 100%;
+}
+.card button {
+  border: 5px solid #eee;
+  margin-bottom: 10%;
+  font-family: "Baloo 2", cursive;
+  z-index: 1000 !important;
+}
+
+.cta {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: #2a161f;
+  background-color: #2a161f;
+  color: #fff;
+  transition: width 0.7s;
+  border: 2px solid greenyellow;
+}
+.cta:hover {
+  width: 180px;
+  transition: width 0.7s;
+}
+
+.cta .icon {
+  opacity: 1;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+}
+
+.cta:hover .icon {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.cta .buttonText {
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.cta:hover .buttonText {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.card .tl {
+  width: 100%;
+  /* height: 100%; */
+  height: 500px;
+  background-color: #1d2f50;
+  background-image: url("../../images/backfull.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card .al {
+  width: 100%;
+  height: 400px;
+  background-color: #edf1f4;
+  background-image: url("../../images/alegantto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 65%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card .rc {
+  width: 100%;
+  height: 500px;
+  background-color: #edf1f4;
+  background-image: url("../../images/reclutachat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card .bl {
+  width: 100%;
+  height: 500px;
+  background-color: #edf1f4;
+  background-image: url("../../images/borrego-lavin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.eternaCard {
+  width: 250px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+}
+.eternaLinks {
+  width: 100%;
+  margin-top: 15%;
+  padding-left: 55px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.link {
+  text-decoration: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.titleCrd {
+  color: #000;
+  margin-top: 5px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.txtCrd {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1440px) {
+  /* .container {
+    width: 620px;
+  } */
+
+}
+@media (max-width: 1280px) {
+  /* .container {
+    width: 600px;
+  } */
+  /* .card {
+    margin-top: 7%;
+  } */
+}
+@media (max-width: 990px) {
+  /* .container {
+    justify-content: flex-start;
+  } */
+  /* .eternaCard {
+    margin-top: 15%;
+  }
+  .card {
+    margin-top: 32%;
+  } */
+  /* .card .tl {
+    height: 200px;
+  }
+  
+  .card .al {
+    height: 300px;
+  }
+  .card .rc {
+    height: 300px;
+  }
+  .card .bl {
+    height: 300px;
+
+  } */
+
+}
+@media (max-width: 800px) {
+  .container {
+    
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    margin-left: 0px;
+  }
+  .eternaLinks {
+    margin-top: -15%;
+    padding-left: 65px;
+  }
+}
